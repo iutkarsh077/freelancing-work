@@ -1,58 +1,2651 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Photo Gallery with Navbar</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="logo">
-        <a href="#">Montaria</a>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-          <a href="#">Home</a>
-          <a href="#">Contact Info</a>
-          <a href="#">Route</a>
+ <html lang="en" class="no-js"> 
+	<head data-no-instant>
+		<meta name="robots" content="index,follow">
+		<meta name="p:domain_verify" content="734116d2acd119da5d3dc8b41be33f63"/>
+		<meta name="facebook-domain-verification" content="isv2d46hp2zuk33trhasq0czz8bltri" />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Interior Design Projects by WORKSTEAD</title>
+		<meta name="description" content="Workstead is a Design Studio located in Brooklyn, NY.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		
+		<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7978052/610884/css/fonts.css" />
+		<link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+
+		<link rel="stylesheet" href="https://workstead.com/css/main.redux.css?v=z3">
+		<link rel="stylesheet" href="https://workstead.com/css/trade-account-forms.css?v=c6">
+		
+		<script src="https://workstead.com/js/vendor/modernizr-2.7.1.min.js"></script>
+		<script src="https://player.vimeo.com/api/player.js"></script>
+		
+		<style>
+		#site-header { top: 0; }
+		    .resource-groups .resource .overlay {
+		        display: block;
+		        background: none;
+		        opacity: 1;
+		        padding: 0 10px;
+		    }
+		    .resource-groups .resource .overlay:before {
+		        content: "";
+		        opacity: 0;
+		        width: 100%;
+		        height: 100%;
+		        position: absolute;
+		        top: 0;
+		        left: 0;
+		        background: rgba(255,255,255,.75);
+                -webkit-transition: opacity .3s ease-in-out;
+                -moz-transition: opacity .3s ease-in-out;
+                -ms-transition: opacity .3s ease-in-out;
+                -o-transition: opacity .3s ease-in-out;
+                transition: opacity .3s ease-in-out;
+		    }
+		    
+		    .resource-groups .resource .overlay:hover:before {
+		        opacity: 1;
+		    }
+		    
+		    .resource-cat .overlay .table-cell {
+		        vertical-align: bottom;
+		        padding-bottom: 20px;
+		    }
+		    
+		    .press .resource-cat .press-list-wrap .press-item .overlay {
+		        background: none;
+		        opacity: 1;
+		    }
+		    
+		    .press .resource-cat .overlay .table-cell span {
+		        color: #fff;
+		    }
+		    
+		    .press .resource-groups .resource a {
+		        display: block;
+		        position: relative;
+		    }
+		    .press .resource-groups .resource span {
+		        color: #fff;
+		    }
+		    .press .resource-groups .resource .table {
+		        position: relative;
+		    }
+		    .press .resource-groups .resource .press-title {
+		        /* position: absolute;
+		        width: 100%;
+		        bottom: 0px;
+		        left: 0;
+		        padding-bottom: 20px; */
+		    }
+		    #product-detail .section-wrap .share-links .social-buttons li.sb-email {
+		        background: none;
+                cursor: pointer;
+                float: none;
+                width: auto;
+                height: auto;
+                display: block;
+                margin-left: 0;
+		    }
+		    #product-detail .section-wrap .share-links .social-buttons li.sb-email a {
+		        color: black;
+		        text-indent: inherit;
+		        text-decoration: none;
+		    }
+		    #product-detail .section-wrap .share-links .social-buttons li.sb-email a:hover {
+		        text-decoration:underline;
+		    }
+		    
+		    #product-detail .detail.options .option.selected {
+		        border: 1px solid #666666;
+		    }
+		    
+		    .studio .project-list .project .inner-wrap {
+		        align-items: center;
+		    }
+		    
+		    .studio .project-list .project .inner-wrap > div.proj_name {
+		        font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", "Gotham Narrow A", "Helvetica", "Arial", sans-serif;
+                font-size: 0.6875em;
+		        color: #fff;
+		        background: #000;
+		    }
+		    
+		    .project .static-box .overlay {
+		        opacity: 1;
+		        font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", "Gotham Narrow A", "Helvetica", "Arial", sans-serif;
+                font-size: 14px;
+		        color: #fff;
+		        background: #000;
+		        padding-left: 40px;
+		        padding-right: 40px;
+		            letter-spacing: 0.05em;
+    line-height: 150%;
+		        
+		    }
+		    
+		   .project .static-box .overlay .table-cell {
+		       color: #fff;
+		   }
+		   
+		   .product-item.static-box {
+		       /* background: #000;
+		       padding: 0 30px; */
+		   }
+		   
+		   .product-item.static-box .inner-wrap {
+		       background: #000;
+		       
+		   }
+		   .product-item.static-box .inner-wrap > div {
+		       position: relative;
+		   }
+		   
+		   .product-item.static-box img {
+		       visibility: hidden;
+		       opacity: 0;
+		   }
+		   
+		   #products-container .product-item.static-box p {
+		       font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", "Gotham Narrow A", "Helvetica", "Arial", sans-serif;
+                font-size: 14px;
+		        color: #fff;
+		        /* transform: translate(-50%, -50%);
+		        left: 50% !important;
+		        top: 50% !important; */
+		        bottom: initial;
+		        top: 0;
+		        padding: 0 40px;
+		        text-transform: initial;
+		        display: flex;
+		        flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                 letter-spacing: 0.05em;
+                line-height: 150%;
+		        
+		   }
+		   
+		   .project .static-box .overlay .table-cell {
+		       text-transform: initial;
+		   }
+		    
+		    
+		     #product-detail .detail.options .option[title="Natural Burlap Shade"] {
+    background: url("https://workstead.com/img/color-swatches/Natural-Burlap-Shade.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Oxidized Ash"] {
+    background: url("https://workstead.com/img/color-swatches/Oxidized Ash.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Glazed White"] {
+    background: url("https://workstead.com/img/color-swatches/Glazed-White.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+#product-detail .detail.options .option[title="Beige Cord"].option[data-type="size"] {
+    background: url("https://workstead.com/img/color-swatches/Cord Beige.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border: none;
+ }
+ 
+ #product-detail .detail.options .option[title="Beige Cord"].option[data-type="size"]:after {
+    opacity: 0;
+ }
+#product-detail .detail.options .option[title="Black Cord"].option[data-type="size"] {
+    background: url("https://workstead.com/img/color-swatches/Cord Black.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border: none;
+ }
+ 
+ #product-detail .detail.options .option[title="Black Cord"].option[data-type="size"]:after {
+    opacity: 0;
+ }
+ #product-detail .detail.options .option[title="Waxed Aluminum"] {
+    background: url("https://workstead.com/img/color-swatches/Waxed Aluminum.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Glazed White Earthenware"] {
+    background: url("https://workstead.com/img/color-swatches/Glazed-White.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Natural Oak"] {
+    background: url("https://workstead.com/img/color-swatches/Natural Oak.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Bleached Maple"] {
+    background: url("https://workstead.com/img/color-swatches/Bleached Maple.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Painted Finish"] {
+    background: url("https://workstead.com/img/color-swatches/Painted Finish.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Brushed Nickel Upcharge"] {
+    background: url("https://workstead.com/img/color-swatches/Brushed Nickel.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Natural Linen Shade"] {
+    background: url("https://workstead.com/img/color-swatches/Natural-Linen-Shade.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Rolling Hills"] {
+    background: url("https://workstead.com/img/color-swatches/Rolling Hills.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Woodland Silhouette"] {
+    background: url("https://workstead.com/img/color-swatches/Woodland Silhouette.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Blackened Brass"] {
+    background: url("https://workstead.com/img/color-swatches/Black Enamel.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Black Enamel"] {
+    background: url("https://workstead.com/img/color-swatches/Black Enamel.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Brushed Nickel"] {
+    background: url("https://workstead.com/img/color-swatches/Brushed Nickel.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Hand Finished Bronze"] {
+    background: url("https://workstead.com/img/color-swatches/Hand Finished Bronze.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Hewn Brass"] {
+    background: url("https://workstead.com/img/color-swatches/Hewn Brass.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Industrial Black"] {
+    background: url("https://workstead.com/img/color-swatches/Industrial Black.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Oxidized Oak"] {
+    background: url("https://workstead.com/img/color-swatches/Oxidized Oak.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Painted Gray"] {
+    background: url("https://workstead.com/img/color-swatches/Painted Gray Oak.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Painted White"] {
+    background: url("https://workstead.com/img/color-swatches/Painted White Oak.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Painted Yellow"] {
+    background: url("https://workstead.com/img/color-swatches/Painted Yellow Oak.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="White Enamel"] {
+    background: url("https://workstead.com/img/color-swatches/White-Enamel_2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Floreana"] {
+    background: url("https://workstead.com/img/color-swatches/Floreana.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Brushed Aluminum"] {
+    background: url("https://workstead.com/img/color-swatches/Brushed Aluminum.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Blackened Steel Option"] {
+    background: url("https://workstead.com/img/color-swatches/Blackened-Steel.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Brushed Nickel Option"] {
+    background: url("https://workstead.com/img/color-swatches/Brushed Nickel.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Hewn Brass Option"] {
+    background: url("https://workstead.com/img/color-swatches/Hewn Brass.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Matte Black Enamel"] {
+    background: url("https://workstead.com/img/color-swatches/Black Enamel.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Matte White Enamel"] {
+    background: url("https://workstead.com/img/color-swatches/White-Enamel_2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Natural Linen"] {
+    background: url("https://workstead.com/img/color-swatches/Natural-Linen-Shade.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Tala Sphere IV"] {
+    background: url("https://workstead.com/img/color-swatches/Sphere_IV.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Tala Porcelain II"] {
+    background: url("https://workstead.com/img/color-swatches/Porcelian_II.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Tala Sphere I"] {
+    background: url("https://workstead.com/img/color-swatches/Sphere_I_E26.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+ #product-detail .detail.options .option[title="Matte Black Enamel"] {
+    background: url("https://workstead.com/img/color-swatches/Matte Black Enamel.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+ }
+		    
+		  /*   .shop #products-container {
+		      padding-top: 130px;
+		  } */
+		    
+		    /* #product-detail .section-wrap {
+		        padding-top: 90px;
+		    } */
+		    
+		    .choices .option {
+		        transition: all .3s ease-in-out !important;
+		    }
+		    
+		    .option.faded,
+		    .option._faded{
+		        opacity: .2;
+		    }
+		    
+		    
+		    
+		    .option.hovering,
+		    .option:hover,
+		    .option.selected {
+		        opacity: 1 !important;
+		    }
+		    
+		    .test #product-detail .detail.options .option {
+		        border-width: 0 !important;
+		    }
+		    
+		     #cart-modal {
+		        width: 530px;
+		    }
+		    
+		     #cart-modal .headers {
+		        display: flex;
+		        flex-direction: row;
+		        flex-wrap: wrap;
+		    }
+		    
+		     #cart-modal .headers p:nth-child(1) {
+		        width: 50%;
+		    }
+		    
+		     #cart-modal .headers p:nth-child(2) {
+		        width: 20%;
+		        text-align: center;
+		    }
+		    
+		     #cart-modal .headers p:nth-child(3) {
+		        width: 30%;
+		        text-align: right;
+		    }
+		    
+		     #cart-modal .headers p:nth-child(4) {
+		        width: 20%;
+		    }
+		    
+		     #cart-modal .headers p:last-child {
+		        text-align:right;
+		    }
+		    
+		    #minicart .item {
+		        display: flex;
+		        flex-direction: row;
+		        flex-wrap: wrap;
+		        /* align-items: center; */
+		        height: auto;
+		    }
+		    
+		    #minicart .item .name > span {
+		        display: none;
+		    }
+		    
+		    
+		    #minicart .item .name > span {
+		      display: block;
+		    }
+		    
+		    
+		    #minicart .item span:nth-child(1) {
+		        width: 50%;
+		        color: #fff;
+		        padding-right: 10px;
+		    }
+		    
+		    #minicart .item span:nth-child(2) {
+		        width: 20%;
+		        text-align: center;
+		    }
+		    
+		    #minicart .item span:nth-child(3) {
+		        width: 30%;
+		        margin: 0;
+		        text-align: right;
+		    }
+		    
+		     #cart-modal .item > div {
+		        width: 20%;
+		        float: none;
+		        text-align: center;
+		    }
+		    
+		    #cart-modal .headers p { color: #7A7A7A; }
+		    
+		    #minicart .item + .item {
+          margin-top: 23px;
+        }
+		    
+		    .purchased-links {
+                padding-left: 16px;
+            }
+            
+            .purchased-links li a {
+                font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", "Gotham Narrow A", "Helvetica", "Arial", sans-serif;
+                font-size: 14px;
+                color: #000;
+                font-weight: 100;
+                text-decoration: none;
+            }
+            
+            #product-detail .detail.options .option[data-type="cord-or-fixed-rod"] {
+                position: relative;
+                text-align: center;
+                border: 1px solid #000000 !important;
+                text-transform: uppercase;
+            }
+            
+            
+            
+            #product-detail .detail.options .option[data-type="cord-or-fixed-rod"]:after {
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                font-weight: 500;
+                text-indent: 0px;
+                position: absolute;
+                text-align: center;
+                font-size: 0.6875em;
+                content: attr(title);
+            }
+            
+            #product-detail .detail.options .option[data-value*="cord"]:after,
+            #product-detail .detail.options .option[data-value*="fixed-rod"]:after{
+                font-size: 14px;
+                font-weight: 400;
+            }
+            
+            #product-detail .detail.options .option[data-value*="cord"]:after {
+                content: 'C';
+            }
+            
+            #product-detail .detail.options .option[data-value*="fixed-rod"]:after {
+                content: 'FR';
+            }
+            
+            #product-detail .detail.options .option.selected[data-type="cord-or-fixed-rod"],
+            #product-detail .detail.options .option:hover[data-type="cord-or-fixed-rod"] {
+                color: #ffffff;
+                background: #000000;
+            }
+		    
+		    #toast-container>.toast-error {
+		      background-image: none !important;  
+		    }
+		    
+		    @media screen and (max-width: 1200px) {
+		        .home #home-links .link {
+                    width: 200px;
+                    height: 200px;
+		        }
+		        
+		        .home #home-links .link .table-cell {
+                    line-height: 200px;
+                }
+                
+                .home #home-links .link {
+                    margin-left: 60px;
+                }
+		    }
+		    
+		    @media screen and (max-width: 667px) {
+		        
+		         #product-detail .detail.options .option[title="Natural Burlap Shade"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Oxidized Ash"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Glazed White"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Beige Cord"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Black Cord"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Waxed Aluminum"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Glazed White Earthenware"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Natural Oak"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Bleached Maple"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Painted Finish"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Brushed Nickel Upcharge"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Natural Linen Shade"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Rolling Hills"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Woodland Silhouette"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Blackened Brass"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Black Enamel"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Brushed Nickel"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Hand Finished Bronze"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Hewn Brass"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Industrial Black"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Oxidized Oak"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Painted Gray"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Painted White"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Painted Yellow"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="White Enamel"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Floreana"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Brushed Aluminum"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Blackened Steel Option"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Brushed Nickel Option"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Hewn Brass Option"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Matte Black Enamel"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Matte White Enamel"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Natural Linen"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Tala Sphere IV"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Tala Porcelain II"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Tala Sphere I"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+ #product-detail .detail.options .option[title="Matte Black Enamel"] {
+    width: 60px;
+    height: 60px;
+    margin-right: 9px;
+ }
+    		    
+    		    .newsletter-popin-box .close-btn { z-index: 2; }
+    		    
+    		    #site-navigation ul li:before {
+    		        display: none;
+    		    }
+    		    
+    		    .home #home-links {
+                    top: 48px;
+                    height: calc(100% - 48px);
+                    margin-top: 0;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                .home #home-links .link {
+                    margin-left: auto;
+                }
+                
+                .home #home-links .link {
+                    width: 160px;
+                    height: 160px;
+		        }
+		        
+		        .home #home-links .link .table-cell {
+                    line-height: 160px;
+                }
+                
+                .book #product-slider .wrap {
+                    height: 400px;
+                }
+                
+                .book #product-slider .wrap img {
+                    min-width: 375px;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+                #footer-links ul li:before {
+                    margin: 0 10px;
+                }
+		    }
+		    
+		    #site-navigation .sub-menu {
+		        right: unset;
+		        width: auto;
+		        min-width: max-content;
+		    }
+		    
+		    .price.with-decimal + span {
+		        display: none;
+		        
+		    }
+		    
+		    .promo-banner {
+		        font-size: 12px;
+		          background: #ccc;
+		          position: fixed;
+                top: 48px;
+                z-index: 2;
+                width: 100%;
+                text-align: center;
+                padding: 0 30px;
+		    }
+		    
+		    @media screen and (max-width: 848px) {
+    		    #footer-links ul li:last-child {
+    		        display: none;
+    		    }
+		    }
+		    @media screen and (max-width: 732px) {
+    		    #footer-links ul li:nth-last-child(2) {
+    		        display: none;
+    		    }
+		    }
+		    
+		    @media screen and (max-width: 767px) {
+		        .promo-banner {
+		            position: absolute;
+		        }
+		        
+		        .project-detail #site-header,
+    		    #site-header {
+                    position: fixed;
+                }
+                
+                 #cart-modal {
+                    width: 100%;
+                }
+                
+                #minicart .item > span:nth-child(2),
+                 #cart-modal .headers > p:nth-child(2) {
+    		        display: none;
+    		    }
+    		    
+    		   #cart-modal .headers p:nth-child(1) {
+    		        width: 50%;
+    		    }
+    		    
+    		     #cart-modal .headers p:nth-child(3) {
+    		        width: 25%;
+    		    }
+    		    
+    		    #cart-modal .headers p:nth-child(4) {
+    		        width: 25%;
+    		    }
+    		    
+    		    #minicart .item span:nth-child(1) {
+    		        width: 50%;
+    		    }
+    		    
+    		    #minicart .item span:nth-child(3) {
+    		        width: 25%;
+    		        margin: 0;
+    		    }
+    		    
+    		    #minicart .item span:nth-child(4) {
+    		        width: 25%;
+    		    }
+    		    
+    		     #cart-modal .item > div {
+    		        width: 25%;
+    		        float: none;
+    		        text-align: right;
+    		    }
+    		    
+    		    #minicart .item .name > span {
+    		        display: block;
+    		        width: 100%;
+    		    }
+    		    
+    		    #minicart .item {
+    		        height: auto;
+    		        margin-bottom: 5px;
+    		    }
+		    }
+		    
+		    
+		    @media screen and (max-width: 640px) {
+    		    .shop #site-footer,
+    		    .product #site-footer {
+    		        display: block !important;
+    		    }
+    		    #footer-links {
+    		        margin-bottom: 16px;
+    		    }
+    		    #footer-links ul li:nth-child(3) {
+    		        display: none;
+    		    }
+    		    #footer-links ul li:nth-child(4) ~ li {
+    		        display: none;
+    		    }
+    		    
+    		    .shop #products-container {
+    		        padding-top: 120px;
+    		    }
+    		    r
+    		    /* #product-detail .section-wrap {
+    		        padding-top: 0px;
+    		    } */
+    		    
+    		    .errors {
+    		      margin-bottom: 15px;
+    		    }
+    		    
+
+    		    
+		    }
+		</style>
+		<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY9RN3HELJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PY9RN3HELJ');
+    </script>
+	</head>
+	<body >
+<style>
+  .__empty {
+    display: none !important;
+  }
+</style>
+	<div id="main-wrapper" class="studio landing unshown">
+		
+<header id="site-header">
+	<h1 class="branding logo">
+    <a data-no-instant href="https://workstead.com/" title="WORKSTEAD – Design in Brooklyn, NY">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.2 16"><title>workstead_controllers</title><path d="M9,15.77,7,5.24,5.15,15.77H2.91L0,.23H2.33l1.77,10L6,.23H8l2,10,1.56-10H13.9L11.27,15.77H9m14.81-4.94V5.17A9.15,9.15,0,0,0,23.64,3,4.62,4.62,0,0,0,23,1.49,3.87,3.87,0,0,0,19.6,0a3.87,3.87,0,0,0-3.36,1.49A4.62,4.62,0,0,0,15.56,3a9.2,9.2,0,0,0-.21,2.17v5.66A9.21,9.21,0,0,0,15.56,13a4.62,4.62,0,0,0,.68,1.51A3.86,3.86,0,0,0,19.6,16,3.86,3.86,0,0,0,23,14.51,4.62,4.62,0,0,0,23.64,13a9.16,9.16,0,0,0,.21-2.17M17.77,5.21a10.75,10.75,0,0,1,.06-1.34,2.55,2.55,0,0,1,.24-.78,1.58,1.58,0,0,1,1.53-.84,1.58,1.58,0,0,1,1.53.84,2.82,2.82,0,0,1,.15.36,2.48,2.48,0,0,1,.09.41,5,5,0,0,1,0,.56q0,.33,0,.79v5.59c0,.31,0,.58,0,.8a4.93,4.93,0,0,1,0,.56,2.54,2.54,0,0,1-.09.41,3,3,0,0,1-.15.36,1.58,1.58,0,0,1-1.53.84,1.58,1.58,0,0,1-1.53-.84,2.56,2.56,0,0,1-.24-.78,10.72,10.72,0,0,1-.06-1.34ZM28.46,15.77V9.39h1.43l2,6.38h2.51L32.16,8.71q2.1-1.07,2.1-4a4.36,4.36,0,0,0-1.4-3.52A3.48,3.48,0,0,0,31.58.45,6.23,6.23,0,0,0,29.79.23H26V15.77h2.42m0-8.62V2.47h.88a5,5,0,0,1,1.17.1,1.45,1.45,0,0,1,.68.38,2.52,2.52,0,0,1,.58,1.84,2.56,2.56,0,0,1-.58,1.87A1.45,1.45,0,0,1,30.5,7a5,5,0,0,1-1.17.1Zm10.22-.49V.23H36.26V15.77h2.42V10.6L40,8.43l2.61,7.34H45.2l-3.75-9.9L44.74.23H42.15L38.68,6.66M52.47,4.54l2.31-.68Q53.77,0,50.42,0a4.6,4.6,0,0,0-1.63.28,3.65,3.65,0,0,0-2.12,2,3.83,3.83,0,0,0-.3,1.54,4.38,4.38,0,0,0,.22,1.38,3.93,3.93,0,0,0,.64,1.21l.41.48a5,5,0,0,0,.45.44l.73.62,1.27,1q.67.54,1.12.94a6,6,0,0,1,.7.75,2.3,2.3,0,0,1,.36.65,2.14,2.14,0,0,1,.11.69,1.65,1.65,0,0,1-1.77,1.77q-2,0-2.4-2.79l-2.31.67Q46.62,16,50.6,16a5.11,5.11,0,0,0,1.74-.28,3.82,3.82,0,0,0,1.34-.8,3.71,3.71,0,0,0,.87-1.26A4.08,4.08,0,0,0,54.86,12a4.61,4.61,0,0,0-.26-1.53,4.17,4.17,0,0,0-.74-1.32,5.71,5.71,0,0,0-.4-.44L53,8.29c-.17-.16-.37-.34-.61-.52l-.84-.68-1-.76-.54-.42a3.17,3.17,0,0,1-.3-.26l-.24-.27a2.32,2.32,0,0,1-.65-1.59,1.52,1.52,0,0,1,1.56-1.56q1.49,0,2,2.31m8.89,11.22V2.47h3V.23H55.94V2.47h3v13.3h2.42M72.75,2.47V.23H65.69V15.77h7.06V13.53H68.12V8.76h3.42V6.52H68.12V2.47h4.63m4.05,9.92h3.31l.65,3.38h2.47L80.09.23H76.8l-3,15.53h2.35l.63-3.38m2.91-2.24H77.17l1.26-7ZM84.88.23V15.77h3.81a4.43,4.43,0,0,0,3.41-1.19,5.28,5.28,0,0,0,1.1-3.68V5.1a5.28,5.28,0,0,0-1.1-3.68A4.43,4.43,0,0,0,88.69.23H84.88m2.42,13.3V2.47h1.18a2,2,0,0,1,1.78.73,4.71,4.71,0,0,1,.51,2.56v4.47a4.72,4.72,0,0,1-.51,2.55,2,2,0,0,1-1.78.74Z"/></svg>
+        <span>Workstead</span>
+    </a>
+</h1>
+	<div id="menu-button"><span></span><span></span><span></span></div>
+	<nav id="site-navigation" loggedout >
+        <ul>
+          <li class="first has-child" >
+    <a data-no-instant   href="brooklyn-design-studio/" data-hash="buildings-and-interiors" >Buildings and Interiors</a>
+    
+    <ul class="sub-menu"><li class="first" >
+    <a data-no-instant   href="brooklyn-design-studio/" data-hash="all-projects" >All Projects</a>
+    
+    
+</li>
+
+<li >
+    <a data-no-instant   href="brooklyn-design-studio/?key=project_tags&tag=Hospitality" data-hash="hospitality" >Hospitality</a>
+    
+    
+</li>
+
+<li >
+    <a data-no-instant   href="brooklyn-design-studio/?key=project_tags&tag=Residential" data-hash="residential" >Residential</a>
+    
+    
+</li>
+
+<li class="last" >
+    <a data-no-instant   href="brooklyn-design-studio/?key=project_tags&tag=In Progress" data-hash="in-progress" >In Progress</a>
+    
+    
+</li>
+
+</ul>
+</li>
+
+<li class="has-child" >
+    <a data-no-instant   href="shop/" data-hash="lighting" >Lighting</a>
+    
+    <ul class="sub-menu"><li class="first" >
+    <a data-no-instant   href="shop/" data-hash="all" >All</a>
+    
+    
+</li>
+
+<li >
+    <a data-no-instant   href="product-cats/quick-ship/" data-hash="quick-ship" >Quick Ship</a>
+    
+    
+</li>
+
+<li >
+    <a data-no-instant   href="product-cats/category-ceiling/" data-hash="ceiling" >Ceiling</a>
+    
+    
+</li>
+
+<li >
+    <a data-no-instant   href="product-cats/category-wall/" data-hash="wall" >Wall</a>
+    
+    
+</li>
+
+<li >
+    <a data-no-instant   href="product-cats/category-floor/" data-hash="floor" >Floor</a>
+    
+    
+</li>
+
+<li >
+    <a data-no-instant   href="product-cats/category-table/" data-hash="table" >Table</a>
+    
+    
+</li>
+
+<li >
+    <a data-no-instant   href="resources/" data-hash="resources" >Resources</a>
+    
+    
+</li>
+
+<li >
+    <a data-no-instant  target="_blank" href="https://indd.adobe.com/view/409ce974-0a0b-48ec-b37c-9735da2337a3" data-hash="catalog" >Catalog</a>
+    
+    
+</li>
+
+<li class="last" >
+    <a data-no-instant   href="user/sign-in/" data-hash="trade-portal" >Trade Portal</a>
+    
+    
+</li>
+
+</ul>
+</li>
+
+<li class="has-child" >
+    <a data-no-instant   href="about/" data-hash="about" >About</a>
+    
+    <ul class="sub-menu"><li class="first" >
+    <a data-no-instant   href="about/" data-hash="studio" >Studio</a>
+    
+    
+</li>
+
+<li >
+    <a data-no-instant   href="about/#press" data-hash="press" >Press</a>
+    
+    
+</li>
+
+<li >
+    <a data-no-instant   href="about/#contact" data-hash="contact" >Contact</a>
+    
+    
+</li>
+
+<li class="last" >
+    <a data-no-instant   href="subscribe/" data-hash="subscribe" >Subscribe</a>
+    
+    
+</li>
+
+</ul>
+</li>
+
+<li class="last" >
+    <a data-no-instant   href="workstead-books/" data-hash="publications" >Publications</a>
+    
+    
+</li>
+
+
+          <li style="display: none;"><a href="user/quotes/" data-no-instant>Quote History</a></li>
+          <li
+            @cart:update.window="items = event.detail;"
+      	    x-data="{
+      	        items: 0
+      	    }"
+          >
+      	          
+            <a href="shopping-cart/" data-hash="cart" data-no-instant>Cart<span x-show="items>0">: </span></span></span><span x-show="items>0" x-text="items"></span></a>
+          </li>    
+          
+        </ul>
+
+        <div class="mobile-menu">
+          
+            
+<ul><li class="first has-child">
+    <a    href="brooklyn-design-studio/" data-no-instant>Buildings and Interiors</a>
+    <ul class="sub-menu"><li class="first">
+    <a    href="brooklyn-design-studio/" >All Projects</a>
+    
+</li>
+<li>
+    <a    href="brooklyn-design-studio/?key=project_tags&tag=Commercial" >Commercial</a>
+    
+</li>
+<li>
+    <a    href="brooklyn-design-studio/?key=project_tags&tag=Residential" >Residential</a>
+    
+</li>
+<li class="last">
+    <a    href="brooklyn-design-studio/?key=project_tags&tag=In Progress" >In Progress</a>
+    
+</li>
+</ul>
+</li>
+<li class="has-child">
+    <a  data-no-instant  href="shop/" >Lighting</a>
+    <ul class="sub-menu"><li class="first">
+    <a    href="shop/" >All Lighting</a>
+    
+</li>
+<li>
+    <a    href="product-cats/category-ceiling/" >Ceiling</a>
+    
+</li>
+<li>
+    <a    href="product-cats/category-wall/" >Wall</a>
+    
+</li>
+<li>
+    <a    href="product-cats/category-floor/" >Floor</a>
+    
+</li>
+<li>
+    <a    href="product-cats/category-table/" >Table</a>
+    
+</li>
+<li>
+    <a    href="product-cats/quick-ship/" >Quick Ship</a>
+    
+</li>
+<li>
+    <a    href="resources/" >Resources</a>
+    
+</li>
+<li>
+    <a   target="_blank" href="https://indd.adobe.com/view/409ce974-0a0b-48ec-b37c-9735da2337a3" >Catalog</a>
+    
+</li>
+<li class="last">
+    <a data-trade-toggler data-no-instant  href="#" >Trade</a>
+    
+</li>
+</ul>
+</li>
+<li class="has-child">
+    <a    href="about/" data-no-instant>About</a>
+    <ul class="sub-menu"><li class="first">
+    <a    href="about/" >Studio</a>
+    
+</li>
+<li>
+    <a    href="about/#press" data-hash="press">Press</a>
+    
+</li>
+<li>
+    <a    href="about/#contact" data-hash="contact">Contact</a>
+    
+</li>
+<li class="last">
+    <a    href="subscribe/" >Subscribe</a>
+    
+</li>
+</ul>
+</li>
+<li class="last">
+    <a    href="workstead-books/" >Publications</a>
+    
+</li>
+
+<li ><a href="user/quotes/">Quotes</a></li>
+<li
+            @cart:update.window="items = event.detail;"
+      	    x-data="{
+      	        items: 0
+      	    }"
+          >
+      	          
+            <a href="shopping-cart/" data-hash="cart" data-no-instant>Cart<span x-show="items>0">: </span></span></span><span x-show="items>0" x-text="items"></span></a>
+          </li>
+          
+</ul>
         </div>
-      </div>
+        
+        
+	</nav>
+	<div class="clearfix"></div>
+</header>
+		
+		<div class="project-list">
+		    <div class="wrap">
+	            
+<div class="project" data-index="1">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/canoe_0.jpg?q=60&auto=format,compress" alt="Canoe Place Inn">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Canoe Place Inn
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
     </div>
+</div>
 
-    <div class="gallery">
-      <div class="photo-container" onclick="redirectTo('about.html')">
-        <img
-          src="https://th.bing.com/th/id/OIP.lB1o_ltOegUPtEvjbDNHlAHaEv?rs=1&pid=ImgDetMain"
-          alt="Photo 1"
-        />
-        <div class="overlay">About Me</div>
-      </div>
-      <div class="photo-container" onclick="redirectTo('about.html')">
-        <img
-          src="https://th.bing.com/th/id/R.02dd4da68829b2fe36d841633a96d73b?rik=AHHzrj%2babK905Q&pid=ImgRaw&r=0"
-          alt="Photo 2"
-        />
-        <div class="overlay">Contact Me</div>
-      </div>
-      <div class="photo-container" onclick="redirectTo('about.html')">
-        <img
-          src="https://th.bing.com/th/id/R.1f153916bff9a3f522485be16dd8cae3?rik=AhDlVuDnc1yhSw&pid=ImgRaw&r=0&sres=1&sresct=1"
-          alt="Photo 3"
-        />
-        <div class="overlay">Information</div>
-      </div>
-      <div class="photo-container" onclick="redirectTo('about.html')">
-        <img
-          src="https://th.bing.com/th/id/OIP.YjoOt8mWhmAlA6tGM9ABgwHaMJ?w=847&h=1390&rs=1&pid=ImgDetMain"
-          alt="Photo 4"
-        />
-        <div class="overlay">Work</div>
-      </div>
+<div class="project"  data-blackbox-studio  style="display: none;" >
+    <div class="image-wrap">
+        <div class="proj_name static-box">
+            <img src="https://tff-workstead.imgix.net/img/project-featured-images/Thumbnail_Image_Black Square.jpg?q=60&auto=format,compress" alt="Residential Text Box">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Workstead spaces balance social activity and repose, and we consider color, pattern, and texture from a design’s earliest stages. As our commissions become more ambitious, we are also increasingly asked to meld interior experience with iconic architectural expression.
+                    </span>
+                </span>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+<div class="project"  data-blackbox-residential  style="display: none;" >
+    <div class="image-wrap">
+        <div class="proj_name static-box">
+            <img src="https://tff-workstead.imgix.net/img/project-featured-images/Thumbnail_Image_Black Square.jpg?q=60&auto=format,compress" alt="Residential Text Box">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Workstead’s inimitable residences are places where homeowners seek peace and enrichment. They are the result of close collaboration between the firm and our clients, as well as local architects of record, artisans, merchants, and artists.
+                    </span>
+                </span>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+<div class="project" data-blackbox-commercial style="display: none;">
+    <div class="image-wrap">
+        
+        
+       
+        <div class="proj_name static-box">
+            <img src="https://tff-workstead.imgix.net/img/project-featured-images/Thumbnail_Image_Black Square.jpg?q=60&auto=format,compress" alt="Commercial Text Box">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Workstead collaborates with clients’ in-house design and engineering teams to create one-of-a-kind destinations. Workstead crafts intriguing new concepts in dining and lodging, as well as wholesale reinventions of the hospitality experience. Every Workstead-designed restaurant and hotel fosters deeply satisfying bonds with a neighborhood or region.
+                    </span>
+                </span>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+<div class="project __empty" data-blackbox-inprogress style="display: none;">
+    <div class="image-wrap">
+        
+        
+       
+        <div class="proj_name static-box">
+            <img src="https://tff-workstead.imgix.net/img/project-featured-images/Thumbnail_Image_Black Square.jpg?q=60&auto=format,compress" alt="Commercial Text Box">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        
+                    </span>
+                </span>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+<div class="project" data-index="2">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/lerock_0.jpg?q=60&auto=format,compress" alt="Le Rock">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Le Rock
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="3">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/Jupiter Header.jpg?q=60&auto=format,compress" alt="Jupiter">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Jupiter
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="4">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/30F_hero render.jpg?q=60&auto=format,compress" alt="Olympia Dumbo">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Olympia Dumbo
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="5">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/Cover image copy.jpg?q=60&auto=format,compress" alt="Hook Pond Residence">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Hook Pond Residence
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="6">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/Twin-Bridges-Cover.jpg?q=60&auto=format,compress" alt="Twin Bridges House">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Twin Bridges House
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="7">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/SI_HOVER.jpg?q=60&auto=format,compress" alt="Shelter Island House">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Shelter Island House
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="8">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/WEB_THUMBNAIL_Ditmas Park.jpg?q=60&auto=format,compress" alt="Prospect Park South House">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Prospect Park South House
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="9">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/1PPWBanner.jpg?q=60&auto=format,compress" alt="One Prospect Park West">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        One Prospect Park West
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="10">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/Gallatin-Thumb.jpg?q=60&auto=format,compress" alt="Gallatin House">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Gallatin House
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="11">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/Dewberry_HOVER.jpg?q=60&auto=format,compress" alt="The Dewberry">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        The Dewberry
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="12">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/Citrus Club_Web Thumbnail_1.jpg?q=60&auto=format,compress" alt="The Citrus Club">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        The Citrus Club
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="13">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/./ARCADE.jpg?q=60&auto=format,compress" alt="Frenchette Bakery">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Frenchette Bakery
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="14">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/Vintage_Thumbnail_New.jpg?q=60&auto=format,compress" alt="Vintage Wine Bar">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Vintage Wine Bar
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="15">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/Rivertown_Banner.jpg?q=60&auto=format,compress" alt="Rivertown Lodge">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Rivertown Lodge
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="16">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/./Rivertown_Tavern-Thumb.jpg?q=60&auto=format,compress" alt="Rivertown Tavern">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Rivertown Tavern
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="17">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/In Progress/Hellbrook_Hover.jpg?q=60&auto=format,compress" alt="Hellbrook House">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Hellbrook House
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="18">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/In Progress/Hamlet_Hover_04_In_Progress_02.jpg?q=60&auto=format,compress" alt="Hamlet in the Hayfield">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Hamlet in the Hayfield
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="19">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/In Progress/Germantown_Hover_In_Progress_02.jpg?q=60&auto=format,compress" alt="Germantown House">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Germantown House
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="20">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/./Hover.jpg?q=60&auto=format,compress" alt="Charleston Carriage House">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Charleston Carriage House
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="21">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/WSH_Thumb.jpg?q=60&auto=format,compress" alt="Charleston Townhouse">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Charleston Townhouse
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="22">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/./Thumb.jpg?q=60&auto=format,compress" alt="Garden & Gun Club">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Garden & Gun Club
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="23">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/./WYTHE-BAR.jpg?q=60&auto=format,compress" alt="The Ides Bar">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        The Ides Bar
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="24">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/wythe_hotel.jpg?q=60&auto=format,compress" alt="The Wythe Hotel Lobby">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        The Wythe Hotel Lobby
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="25">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/WEB_THUMBNAIL_Upper West Side Apt.jpg?q=60&auto=format,compress" alt="Upper West Side Apartment">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Upper West Side Apartment
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="26">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/./BOERUM-HILL.jpg?q=60&auto=format,compress" alt="Boerum Hill Townhouse">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Boerum Hill Townhouse
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="27">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="about.html" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/tribeca_loft.jpg?q=60&auto=format,compress" alt="Tribeca Loft">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Tribeca Loft
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="28">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="brooklyn-design-studio/projects/47-plaza/" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/47PLAZA_Thumbail.jpg?q=60&auto=format,compress" alt="Park Slope Apartment">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Park Slope Apartment
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+
+<div class="project" data-index="29">
+    <div class="image-wrap">
+        
+        
+       
+        
+            
+             <a data-no-instant href="brooklyn-design-studio/projects/greenpoint/" class="proj_name ">
+            
+            
+            <img src="https://tff-ws3.imgix.net/img/project-featured-images/In Progress/Germantown_Hover_In_Progress_THUMB.jpg?q=60&auto=format,compress" alt="Greenpoint">
+            <div class="overlay">
+                <span class="table">
+                    <span class="table-cell">
+                        Greenpoint
+                    </span>
+                </span>
+            </div>
+            
+        </a>
+        
+        
+    </div>
+</div>
+                <div class="clearfix"></div>
+		    </div>
+		</div>
+	</div>
+	<style>
+    .superhide {
+        display:none;
+        visibility:hidden;
+        position: absolute;
+        left: -999em;
+        opacity: 0;
+    }
+
+    #newsletter-popin-wrapper {
+        display: flex;
+        display: none;
+        opacity: 0;
+        height: 100vh;
+        width: 100vw;
+        min-height: 400px;
+        position: fixed;
+        top: 0px;
+        justify-content: center;
+        left: 0px;
+        align-items: center;
+    }
+    #newsletter-popin-box {
+        height: 400px;
+        width: 400px;
+        display:none;
+        background: #000000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        position: relative;
+    }
+    .newsletter-popin-box .close-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 25px;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+    }
+    .newsletter-popin-box .close-btn div {
+        position: relative;
+    }
+    .newsletter-popin-box .close-btn span {
+        width: 20px;
+        height: 1px;
+        display: block;
+        transform: rotate(45deg);
+        background: #fff;
+        position: relative;
+    }
+    .newsletter-popin-box .close-btn span:first-child {
+        top: 1px;
+        transform: rotate(-45deg);
+    }
+    .newsletter-popin-box .wrap {
+        display: flex;
+        width: 70%;
+        margin: 0px auto;
+        height: 100%;
+        max-width: 250px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .newsletter-popin-box h4,
+    .newsletter-popin-box p,
+    .newsletter-popin-box .success h4 {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 0.6875em;
+        letter-spacing: 0.20em;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-top: 0px;
+        line-height: 1.8;
+    }
+    
+    .newsletter-popin-box p a,
+    .newsletter-popin-box h4 a {
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid #fff;
+    }
+    .newsletter-popin-box .success h4 {
+        margin-bottom: 0px;
+        font-size: 0.8125em;
+    }
+    .newsletter-popin-box .success {
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+    .newsletter-popin-box .success .wrapper {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .newsletter-popin-box form input {
+        background: none;
+        border: 0px;
+        border-bottom: 1px solid white;
+        text-align: center;
+        width: 100%;
+        color: #fff;
+        border-radius: 0px;
+        font-size: 0.6875em;
+        letter-spacing: 0.20em;
+        height: 28px;
+        line-height: 28px;
+        outline: 0px;
+    }
+    .newsletter-popin-box form input::placeholder {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .newsletter-popin-box form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .newsletter-popin-box form input::-moz-placeholder { /* Firefox 19+ */
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .newsletter-popin-box form input:-ms-input-placeholder { /* IE 10+ */
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .newsletter-popin-box form input:-moz-placeholder { /* Firefox 18- */
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .newsletter-popin-box form input,
+    .newsletter-popin-box form button {
+        display: block;
+    }
+    .newsletter-popin-box form button {
+        margin: 72px auto 0px;
+        width: 95%;
+        max-width: 230px;
+        text-align: center;
+        height: 50px;
+        border: 1px white solid;
+        background: #000;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.6875em;
+        letter-spacing: 0.20em;
+        transition: all .2s linear;
+    }
+    .newsletter-popin-box form button:hover {
+        color: #000;
+        background: #fff;
+    }
+    .popin-overlay {
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: transparent;
+        position: fixed;
+    }
+    
+    @media screen and (max-width: 480px){
+        #newsletter-popin-box {
+            display: block;
+            width: 80%;
+            height: 190px;
+            max-width: 190px;
+        }
+        .newsletter-popin-box .wrap {
+            width: 100%;
+            padding: 0px 20px;
+        }
+        .newsletter-popin-box h4, 
+        .newsletter-popin-box p,
+        .newsletter-popin-box .success h4 {
+            font-size: 8px;
+        }
+        .newsletter-popin-box h4 {
+            margin-bottom: 14px;
+            padding: 0px 5px;
+        }
+        .newsletter-popin-box form input {
+            font-size: 8px;
+            height: 22px;
+            line-height: 22px;
+        }
+        .newsletter-popin-box form button {
+            height: 30px;
+            margin-top: 35px;
+            font-size: 8px;
+            width: 100%;
+        }
+        .newsletter-popin-box .close-btn {
+            height: 12px;
+            width: 12px;
+            top: 13px;
+            right: 10px;
+        }
+        .newsletter-popin-box .close-btn span {
+            width: 12px;
+        }
+    }
+</style>
+<div id="newsletter-popin-wrapper">
+    <div id="newsletter-popin-box" class="newsletter-popin-box">
+        <div class="close-btn">
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="wrap">
+            <p><a href="workstead-books/">THE WORKSTEAD BOOKS</a> ARE NOW AVAILABLE</p>
+        </div>
+    </div>
+    <div class="popin-overlay"></div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js" data-no-instant></script>
+
+
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" data-no-instant></script>
+<script src="https://cdn.plyr.io/3.6.8/plyr.js" data-no-instant></script>
+<script>window.jQuery || document.write('<script src="https://workstead.com/js/vendor/jquery-1.11.1.min.js" data-no-instant><\/script>')</script>
+<script type="text/javascript" src="https://workstead.com/js/plugins.redux.js" data-no-instant></script>
+
+<script type="text/javascript" src="https://workstead.com/js/flickity.min.js" data-no-instant></script>
+<script type="text/javascript" src="https://workstead.com/js/flickity-fade.js" data-no-instant></script>
+		
+		
+
+
+
+<script type="text/javascript" src="https://workstead.com/js/main-redux2.js?v=k5" data-no-instant></script>
+<!-- <script type="text/javascript" src="https://workstead.com/js/misc.js?v=a4" data-no-instant></script> -->
+<script type="text/javascript" src="https://workstead.com/js/instantclick.min.js" data-no-instant></script>
+
+
+<script type="text/javascript" data-no-instant>
+
+function register($form) {
+    $.ajax({
+        type: $form.attr('method'),
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        cache       : false,
+        dataType    : 'jsonp',
+        jsonp       : 'c',
+        contentType: "application/json; charset=utf-8",
+        error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
+        success     : function(data) {
+          console.log(data)
+            if (data.result != "success") {
+                // console.log(data);
+                if (data.msg.indexOf("already subscribed")) {
+                    alert("You're already signed up.");
+                    
+                }
+            }  else {
+                
+                $("#_newsletter-popin-wrapper button").text("Thank you!")
+            }
+        }
+    });
+}
+
+ $('#_newsletter-popin-wrapper button').click(function(e){
+			        e.preventDefault();
+			        var $this = $(this),
+			            emailaddress = $("#mce-EMAIL").val();
+			        if(validateEmail(emailaddress) && emailaddress.length){
+			            register($this.closest('form'));
+			        }
+			    });
+
+  var isLoggedIn = false
+
+  
+    var cartPageTitle="Cart";
+    var isTrader = false;
+  
+	InstantClick.on('wait',function(){
+		if ($('#main-wrapper').hasClass('home'))
+		$('#home-links, .backstretch').fadeOut();
+	});
+	InstantClick.on('change',function(){
+		setTimeout(function(){
+			M.change();
+		},100);
+	});
+	
+	
+	
+	$(document).ready(function(){
+	  
+	  if($(".options._hide").length > 0) {
+	    $(".options._hide").find(".selected").trigger("click")
+	  }
+	  
+    const orderSummaryToggler = $(".toggle-ordersummary")
+    const orderSummary = $(".cart-items")
+    
+    
+  
+      var _totalShipping = $("[data-total-shipping]")
+      if(_totalShipping.length > 0) {
+        var _formattedValue = _totalShipping.text().substr(0,_totalShipping.text().length - 2)
+        _totalShipping.text(_formattedValue+".00")
+      }
+    
+    if(!window.isLoggedIn) {
+      // Cookies.remove('welcomemodal');
+      console.log("remove welcomemodal")
+      localStorage.setItem('welcomemodal','hide');
+    }
+    
+    orderSummaryToggler.on("click",function(){
+        const $t = $(this);
+        console.log($t.hasClass("active"))
+        if($t.text() == "Hide Order Summary") orderSummary.closest(".w-half").hide(), $t.text("Show Order Summary")
+        else orderSummary.closest(".w-half").show(), $t.text("Hide Order Summary")
+    })
+    
+    if($("#billing-address-new:checked").length > 0) {
+      $(".c-shipping-address-section.new-address").removeClass("hide")
+    }
+    
+    const radioBillingDeets = $("input[name='billing_address']")
+    const newAddrForm = $(".new-address")
+    radioBillingDeets.on("change",function(){
+      console.log($(this).attr("id"))
+        if($(this).attr("id") == "billing-address-new") newAddrForm.removeClass("hide")
+        else newAddrForm.addClass("hide")
+    })
+    
+     $(".backdrop").on("click",function(){
+        $("[data-welcome-modal]").fadeOut()
+      })
       
-    </div>
+    if(localStorage.getItem('welcomemodal') !== 'shown' && window.isLoggedIn ){
+      localStorage.setItem('welcomemodal', 'shown');
+      setTimeout(function(){
+        if(window.isLoggedIn) $("[data-welcome-modal]").fadeIn()
+      },3000)
+    }
+    
+    
+    
+})
+</script>
+<script type="text/javascript" data-no-instant>
 
-    <script src="script.js"></script>
-  </body>
+  // hopefully this will reactivate the alpine components after they have been loaded by unstantclick  
+  
+
+  InstantClick.init('mousedown');
+  InstantClick.on('change',function(){
+      window.Alpine.start();
+      $(".quantity-deduct").on('click',function(e){
+          e.preventDefault();
+          var $t= $(this);
+          
+         
+          var form = $t.closest('.update-cart');
+          if(!form.hasClass('updating')){
+            form.addClass('updating')
+            $('body').addClass('cart-updating');
+             
+          var qnty = form.find('input[type=text]');
+          if(qnty.val() > 0) qnty.val(parseInt(qnty.val()) - 1);
+          var action = form.attr('action'),
+          values = form.serialize();
+          values = values.replace('%7C','');
+          values=values.replace('%7C','');
+            $.ajax({
+                url: action,
+                method: 'POST',
+                data: values,
+                dataType: 'json',
+                success: function(result) {
+                    //console.log(result);
+                    if (result.success) {
+                        if (result.message && result.message.length) {
+                                //alert(result.message);
+                                console.log(result.message)
+                            var $quantity = form.find('input[type=text]')
+                            if($quantity.val() == 0) form.closest('.item').remove();
+                            
+                            fetch('http://'+window.location.host+'/carttotalsjson.json')
+                            .then(response => response.json())
+                            .then(data => {
+                                if(data.length > 0) {
+                                  $('span.subtotal').text(data[0].subtotal)
+                                  $('span.total').text(data[0].total)
+                                  var _p = parseInt(form.closest('.item').find('.price').data('price')) * parseInt(qnty.val())
+                                  
+                                  $('span.subtotal').text(data[0].subtotal)
+                                  $('span.total').text(data[0].total)
+                                  form.closest('.item').find('.price').text('$'+_p.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')+'.00')
+                                } else {
+                                  $('span.subtotal').text('$0.00')
+                                  $('span.total').text('$0.00')
+                                  $('<p></p>').addClass('no-items').text('No items in your cart.').appendTo($('#cart-content > .wrap'))
+                                }
+                                form.removeClass('updating')
+                                $('body').removeClass('cart-updating');
+                            })
+                        }
+                    }
+                    else {
+                        if (result.message && result.message.length) {
+                                alert('An error occurred: ' + result.message);
+                        }
+                        else {
+                            alert('Could not add the product to the cart.');
+                        }
+                    }
+                },
+                error: function(result){
+                    console.log('error',result);
+                }
+            });
+          
+          }
+          
+        });
+
+$(".quantity-add").on('click',function(e){
+          e.preventDefault();
+          
+          var $t= $(this);
+          
+          var form = $t.closest('.update-cart');
+          if(!form.hasClass('updating')){
+            form.addClass('updating')
+            $('body').addClass('cart-updating');
+            
+            
+            
+          var qnty = form.find('input[type=text]');
+          qnty.val(parseInt(qnty.val()) + 1);
+          var action = form.attr('action'),
+          values = form.serialize();
+         values = values.replace('%7C','');
+          values=values.replace('%7C','');
+          
+            $.ajax({
+                url: action,
+                method: 'POST',
+                data: values,
+                dataType: 'json',
+                success: function(result) {
+                    //console.log(result);
+                    if (result.success) {
+                        if (result.message && result.message.length) {
+                                //alert(result.message);
+                                console.log(result.message)
+                            var $quantity = form.find('input[type=text]')
+                            if($quantity.val() == 0) form.closest('.item').remove();
+                            
+                            fetch('http://'+window.location.host+'/carttotalsjson.json')
+                            .then(response => response.json())
+                            .then(data => {
+                                if(data.length > 0) {
+                                  var _p = parseInt(form.closest('.item').find('.price').data('price')) * parseInt(qnty.val())
+                                  
+                                  $('span.subtotal').text(data[0].subtotal)
+                                  $('span.total').text(data[0].total)
+                                  form.closest('.item').find('.price').text('$'+_p.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')+'.00')
+                                } else {
+                                  $('span.subtotal').text('$0.00')
+                                  $('span.total').text('$0.00')
+                                  $('<p></p>').addClass('no-items').text('No items in your cart.').appendTo($('#cart-content > .wrap'))
+                                }
+                                form.removeClass('updating')
+                                $('body').removeClass('cart-updating');
+                            })
+                        }
+                    }
+                    else {
+                        if (result.message && result.message.length) {
+                                alert('An error occurred: ' + result.message);
+                        }
+                        else {
+                            alert('Could not add the product to the cart.');
+                        }
+                    }
+                },
+                error: function(result){
+                    console.log('error',result);
+                }
+            });
+          
+          }
+          
+        });
+    
+  });
+
+
+</script>
+    
+    
+   
+		
+
+
+  
+  
+  
+    
+
+
+    <div class="trade-modal-container" data-login-modal>
+    <div class="inner-wrap">
+        <div class="trade-modal-body">
+            <h4>Login</h4>
+            <form action="user/sign-in/" method="post">
+                <input type="hidden" name="service" value="login"> 
+                <input type="hidden" name="returnUrl" value="brooklyn-design-studio/"> 
+
+                <div class="input">
+                    <label id="email">Email</label>
+                    <input type="email" name="username" id="username" placeholder="example@example.com" /> 
+                </div>
+                <div class="input">
+                    <label id="password">Password</label>
+                    <input type="password" name="password" id="password"  />
+                </div>
+                <div class="cta-wrapper">
+                    <p><a href="#">Forgot Password?</a></p>
+                    <div>
+                        <button class="btn-login">Login</button><br />
+                        <a class="btn-trade-account-register" href="user/trade-user-registration-form/">Apply for Trade Account</a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+    
+	</body>
 </html>
